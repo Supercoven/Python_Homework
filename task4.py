@@ -7,18 +7,17 @@
 def plane(num):
     print(f'вы указали {num}-й номер четверти') 
     
-    for el in diapason:
-      if(num-1)==int(diapason.index(el)):
-        print(f'возможный диапазон: {el}')
+    for n in dia:
+      if(num-1)==int(dia.index(n)):
+        print(f'возможный диапазон: {n}')
 
 
 num = int(input("Укажите четверть системы координат (от 1 до 4): "))
 
 if  num<=0 or num>=5:
   print('Надо ввести: от 1 до 4')
-  #stop # не срабатывает
 
-diapason = [
+dia = [
 '(0 до +∞ и от 0 до +∞)',
 '(0 до -∞ и от 0 до +∞)',
 '(0 до -∞ и от 0 до -∞)',
